@@ -1,5 +1,8 @@
 *xie.txt* Author: CHENG XIE
 Last change: February 24, 2011
+//基于成老师的vim 进行补充 by 小马哥
+//当前帮助仅仅针对.h .cpp
+
 
 NERD_commenter --必须是Normal与Visual模式
 	hot key: 	\c+space	切换注释/非注释状态			
@@ -13,8 +16,24 @@ NERD_commenter --必须是Normal与Visual模式
 			\cb		Same cc, 并且两端对齐.
 			\cu		取消注释
 			\ca		在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
+			F1/Ctrl+w 		显示或者关闭帮助/切换光标焦点
+			:ForceMB		可以打开分页栏，每个窗口名字前面有个id
+			:b1				切换到1号buf的窗口
+			:sb1			就是横向切割打开1号buf的窗口，和help的方式一样
+			:sb1 			可以无限打开多个窗口，同时显示
+			:sb123			开多个文件, 横向分割
+			:res+10			调整当前光标所在的窗口的高度, 10可以是任意数字，单位是行
+			F2				可以打开当前文件的函数列表,tab键 和 delete键，可以左右切换窗口焦点
+			,, 				连按两下逗号，会打开快速文件搜索
+			ctrl+a 			在cpp和对应的h文件之间来回切换,如果没有对应的文件，会询问你，要不要创建
+			:e				filepath 手动打开文件的,打开一个文件，并添加到顶部的buf栏
+			ctrl+j/ctrl+k 	上/下切换窗口,光标焦点切换到顶部的buf栏时，可以用tab键切换文件,也可以用方向键将光标移到对应的文件名上，按回车键
+
+
+
 			Normal模式下，几乎所有命令前面都可以指定行数
 			Visual模式下执行命令，会对选中的特定区块进行注释/反注释
+			长的命令记不住的话,tab键可以补全,比如 :For 然后按tab键，就会自动补全 :ForceMB
 	command:	:Dox	生成函数详细信息的注释模板
 
 ctags
