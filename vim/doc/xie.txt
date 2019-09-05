@@ -23,7 +23,6 @@ NERD_commenter --必须是Normal与Visual模式
 			:sb1 			可以无限打开多个窗口，同时显示
 			:sb123			开多个文件, 横向分割
 			:res+10			调整当前光标所在的窗口的高度, 10可以是任意数字，单位是行
-			F2				可以打开当前文件的函数列表,tab键 和 delete键，可以左右切换窗口焦点
 			,, 				连按两下逗号，会打开快速文件搜索
 			ctrl+a 			在cpp和对应的h文件之间来回切换,如果没有对应的文件，会询问你，要不要创建
 			:e				filepath 手动打开文件的,打开一个文件，并添加到顶部的buf栏
@@ -36,12 +35,29 @@ NERD_commenter --必须是Normal与Visual模式
 			长的命令记不住的话,tab键可以补全,比如 :For 然后按tab键，就会自动补全 :ForceMB
 	command:	:Dox	生成函数详细信息的注释模板
 
+代码文件里面
+	hot key:
+			F2				可以打开当前文件的函数列表,tab键 和 delete键，可以左右切换窗口焦点
+			x 				焦点在F2窗口的时候，调整函数列表宽度
+			:resize+10		调整高度
+			:vertical resize +10 		是调整宽度
+			F4 				是折行
+			F5 				mark
+			F6、F7 			跳转到上一个、下一个mark
+			F3 				全项目关键字搜索，关键字是光标当前所在的单词 或者:Rgrep XXXXX 指定关键词全目录搜索，
+			F9是打开、关闭 	搜索结果的窗口，搜索结果可以方向键选择，按回车就直接跳转过去。
+			ctrl+t 			回到跳转之前的地方
+			ctrl+o 			是回到上一次光标停留的地方
+
+
 ctags
-	hot key:	Ctrl+]	关键字跳转
-			Ctrl+\	跳转，并新开一个window区域显示
+	hot key:	
+			Ctrl+]			关键字跳转
+			Ctrl+\			跳转，并新开一个window区域显示
 
 cscope
-	hot key:	Ctrl+@ s	查找光标所在位置的 C 符号(可以跳过注释)
+	hot key:	
+			Ctrl+@ s	查找光标所在位置的 C 符号(可以跳过注释)
 			Ctrl+@ g	查找光标所在位置的变量或函数的定义
 			Ctrl+@ c	查找所有调用了光标所在位置的变量或函数的地方
 			Ctrl+@ t	查找光标所在位置的字符串
@@ -57,8 +73,9 @@ echofunc
 			Ctrl+X Ctrl+N	下一个
 
 自动补全相关
-	hot key:	Ctrl+X Ctrl+O	显示补全列表
-			Ctrl+_		显示补全列表
+	hot key:
+			Ctrl+X Ctrl+O	显示补全列表
+			Ctrl+_			显示补全列表
 
 MiniBufExplorer
 	hot key:	Ctrl+X Ctrl+D 	关闭当前buffer
@@ -98,17 +115,20 @@ Taglist
 			s	在Taglist窗口内按s键，对内容进行排序
 	
 a.vim
-	hot key:	Ctrl+A 		在新Buffer中切换到cpp\h文件
+	hot key:	
+			Ctrl+A 			在新Buffer中切换到cpp\h文件
 			Ctrl+A Ctrl+S	横向分割窗口并打开cpp\h文件	
 			Ctrl+A Ctrl+V	纵向分割窗口并打开cpp\h文件	
-	Command:	:A		在新Buffer中切换到cpp\h文件
+	Command:
+			:A		在新Buffer中切换到cpp\h文件
 			:AS		横向分割窗口并打开cpp\h文件
 			:AV		纵向分割窗口并打开cpp\h文件
 			:AT		新建一个tab标签页并打开cpp\h文件
 				
 Project
 	Hot key:	F12	打开或关闭project窗口
-	Command:	:PC	刷新ctags与cscope
+	Command:
+			:PC	刷新ctags与cscope
 			:PE	进入可编辑的模式
 			:PW 	离开可编辑模式并写入文件
 
