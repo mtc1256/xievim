@@ -21,6 +21,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8
 set fileformats=unix
 set fileformat=unix
+set cuc cul
 
 ",gb2312,gbk,big5
 
